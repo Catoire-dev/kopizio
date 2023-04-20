@@ -8,11 +8,11 @@ body {
 /* -----------------Header-------------------- */
 
 /*navigation starts*/
-
 header a {
   color: black; 
   text-decoration: none;
 }
+
 header {
   padding-left: 15px;
   padding-right: 15px;
@@ -20,6 +20,7 @@ header {
   box-sizing: border-box;
   height: 60px;
 }
+
 header .logo {
   font-size: x-large;
   font-weight: 800;
@@ -57,25 +58,28 @@ header .order-b {
   border-radius: 10px;
   padding: 10px;
 }
+
 /*navigation ends*/
 
 /*about section starts*/
 section.about {
   box-sizing: border-box;
-  /* height: 100vh; */
   background-color: #3c6997;
   padding: 60px;
 }
+
 section.about .text {
   display: flex;
   align-items: center;
   gap: 20px;
 }
+
 section.about p {
   padding-left: 20px;
   padding-right: 60px;
   line-height: 1.6;
 }
+
 section.about img {
   border-radius: 20px;
   max-width: 40%;
@@ -132,21 +136,23 @@ section.about .dots span.first {
 
 /* -----------------Main-------------------- */
 
-#menu{
+#menu {
     display: flex;
     flex-direction: column;
     background-color:#C1BDB3 ;
 
 }
-#menu > h2{
+
+#menu > h2 {
     background-color: #C1BDB3;
     margin: 0.7em 0 0 0;
     text-align: center;
     font-size: 30px;
 }
-.block_images{
 
-    background-color:#C1BDB3 ;
+.block_images {
+
+  
     text-align: center;
     padding: 2%;
     display: flex;
@@ -156,7 +162,8 @@ section.about .dots span.first {
 
 
 }
-.img1,.img2,.img3,.img4,.img5,.img6{
+
+.img1,.img2,.img3 {
 
     margin:40px;
     border-radius: 5%;
@@ -176,32 +183,39 @@ section.about .dots span.first {
     justify-content: center;
 
 }
-.block_images button{
+
+.block_images button {
     color: #ffffff;
     font-size: 20px;
     border: none;
     background-color: #C1BDB3;
 }
-.block_images p{
+
+.block_images p {
     font-size: 30px;
 }
-.img-card{
+
+.title_img1,.title_img2,.title_img3 {
+    border: none #C1BDB3 2px;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+} 
+
+.img-card {
     border-radius: 5% 5% 0% 0%  ;
 }
-.txt-card{
+
+.txt-card {
     margin: 0;
 }
-.main-btn:hover{
-    background-color: #0000003b;
-    border-radius: 100%;
-}
-/*//////////////info img1/////////////////  */
 
+/*//////////////info img1/////////////////  */
 .block_images .img1 {
     position: relative;
 }
 
-.block_images .img1 button div{
+.block_images .img1 button div {
     position: absolute;
     color: #040303;
     background-color: #c1bdb363;
@@ -214,16 +228,16 @@ section.about .dots span.first {
     display: none;
 }
 
-.img1 button:hover div{
+.img1 button:hover div {
     display: block;
 }
-/*//////////////info img2/////////////////  */
 
+/*//////////////info img2/////////////////  */
 .block_images .img2 {
     position: relative;
 }
 
-.block_images .img2 button div{
+.block_images .img2 button div {
     position: absolute;
     color: #040303;
     background-color: #c1bdb363;
@@ -236,7 +250,7 @@ section.about .dots span.first {
     display: none;
 }
 
-.img2 button:hover div{
+.img2 button:hover div {
     display: block;
 }
 
@@ -333,35 +347,34 @@ section.about .dots span.first {
     border-radius: 100%;
 }
 
-.btn-info ul li {
+.btn-info div ul {
     list-style: none;
 }
 
 
 /* ///////////////////Desktop///////////////////// */
 @media screen and(min-width: 1024px) {
+  .block_images{
+    
+      text-align: center;
+      padding: 2%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      flex-wrap: wrap;
+  }
 
-.block_images{
-  
-    text-align: center;
-    padding: 2%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.img1,.img2,.img3{
-    border-radius: 5%;
-    box-shadow: 0px 0px 10px black;
-    padding: 0;
-    justify-content: center;
-    align-items: center;  
-    text-align: center;
-    flex-wrap:nowrap;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
+  .img1,.img2,.img3{
+      border-radius: 5%;
+      box-shadow: 0px 0px 10px black;
+      padding: 0;
+      justify-content: center;
+      align-items: center;  
+      text-align: center;
+      flex-wrap:nowrap;
+      margin-top: 10px;
+      margin-bottom: 10px;
+  }
 }
 
 /* -----------------Footer-------------------- */
@@ -386,7 +399,7 @@ section.about .dots span.first {
 
 form {
   height: 20em;
-
+  
   display: grid;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
   column-gap: 0.5em;
@@ -485,5 +498,4 @@ Color_palette {
   color: #3c6997;
   color: #586f7c;
   color: #040303;
-}
 }
