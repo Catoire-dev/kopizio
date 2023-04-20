@@ -1,9 +1,8 @@
-
 /* -----------------Global-------------------- */
 body {
-    margin: 0;
-    font-family: 'Roboto', sans-serif;
-  }
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
 
 /* -----------------Header-------------------- */
 
@@ -149,159 +148,221 @@ section.about .dots span.first {
     text-align: center;
     font-size: 30px;
 }
-
 .block_images {
+  background-color: #c1bdb3;
+  text-align: center;
+  padding: 2%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.img1,
+.img2,
+.img3,
+.img4,
+.img5,
+.img6 {
+  margin: 40px;
+  border-radius: 5%;
+  box-shadow: 0px 0px 10px black;
+  width: 300px;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-wrap: nowrap;
+}
+.txt-btn {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.block_images button {
+  color: #ffffff;
+  font-size: 20px;
+  border: none;
+  background-color: #c1bdb3;
+}
+.block_images p {
+  font-size: 30px;
+}
+.img-card {
+  border-radius: 5% 5% 0% 0%;
+}
+.txt-card {
+  margin: 0;
+}
+.main-btn:hover {
+  background-color: #0000003b;
+  border-radius: 100%;
+}
+/*//////////////info img1/////////////////  */
+.block_images .img1 {
+  position: relative;
+}
 
-  
+.block_images .img1 button div {
+  position: absolute;
+  color: #040303;
+  background-color: #c1bdb363;
+  text-align: start;
+  backdrop-filter: blur(10px);
+  width: 100%;
+  height: 80%;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.img1 button:hover div {
+  display: block;
+}
+
+/*//////////////info img2/////////////////  */
+.block_images .img2 {
+  position: relative;
+}
+
+.block_images .img2 button div {
+  position: absolute;
+  color: #040303;
+  background-color: #c1bdb363;
+  text-align: start;
+  backdrop-filter: blur(10px);
+  width: 100%;
+  height: 80%;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.img2 button:hover div {
+  display: block;
+}
+
+/*//////////////info img3/////////////////  */
+.block_images .img3 {
+  position: relative;
+}
+
+.block_images .img3 button div {
+  position: absolute;
+  color: #040303;
+  background-color: #c1bdb363;
+  text-align: start;
+  backdrop-filter: blur(10px);
+  width: 100%;
+  height: 80%;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.img3 button:hover div {
+  display: block;
+}
+
+/*//////////////info img4/////////////////  */
+.block_images .img4 {
+  position: relative;
+}
+
+.block_images .img4 button div {
+  position: absolute;
+  color: #040303;
+  background-color: #c1bdb363;
+  text-align: start;
+  backdrop-filter: blur(10px);
+  width: 100%;
+  height: 80%;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.img4 button:hover div {
+  display: block;
+}
+/* /////////////////info img5///////////////////// */
+.block_images .img5 {
+  position: relative;
+}
+
+.block_images .img5 button div {
+  position: absolute;
+  color: #040303;
+  background-color: #c1bdb363;
+  text-align: start;
+  backdrop-filter: blur(10px);
+  width: 100%;
+  height: 80%;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.img5 button:hover div {
+  display: block;
+}
+
+/* /////////////////info img6///////////////////// */
+.block_images .img6 {
+  position: relative;
+}
+
+.block_images .img6 button div {
+  position: absolute;
+  color: #040303;
+  background-color: #91701e63;
+  text-align: start;
+  backdrop-filter: blur(10px);
+  width: 100%;
+  height: 80%;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.img6 button:hover div {
+  display: block;
+}
+/* ///////////////////////////////////////////////////// */
+
+.btn-info:hover {
+  background-color: #a4a199;
+  border-radius: 100%;
+}
+
+.btn-info ul li {
+  list-style: none;
+}
+
+/* ///////////////////Desktop///////////////////// */
+@media screen and(min-width: 1024px) {
+  .block_images {
     text-align: center;
     padding: 2%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
+  }
 
-
-}
-
-.img1,.img2,.img3 {
-
-    margin-top: 10px;
-    margin-bottom: 10px;
+  .img1,
+  .img2,
+  .img3 {
     border-radius: 5%;
     box-shadow: 0px 0px 10px black;
     padding: 0;
     justify-content: center;
-    align-items: center;  
+    align-items: center;
     text-align: center;
-    flex-wrap:nowrap;
-
-}
-
-.block_images button {
-    color: #ffffff;
-    font-size: 20px;
-    border: none;
-    background-color: #C1BDB3;
-}
-
-.block_images p {
-    font-size: 30px;
-}
-
-.title_img1,.title_img2,.title_img3 {
-    border: none #C1BDB3 2px;
-    display: flex;
-    flex-direction: row;
-    justify-content:center;
-} 
-
-.img-card {
-    border-radius: 5% 5% 0% 0%  ;
-}
-
-.txt-card {
-    margin: 0;
-}
-
-/*//////////////info img1/////////////////  */
-.block_images .img1 {
-    position: relative;
-}
-
-.block_images .img1 button div {
-    position: absolute;
-    color: #040303;
-    background-color: #c1bdb363;
-    text-align: start;
-    backdrop-filter: blur(10px) ;
-    width: 100%;
-    height: 80%;
-    top: 0;
-    left: 0;
-    display: none;
-}
-
-.img1 button:hover div {
-    display: block;
-}
-
-/*//////////////info img2/////////////////  */
-.block_images .img2 {
-    position: relative;
-}
-
-.block_images .img2 button div {
-    position: absolute;
-    color: #040303;
-    background-color: #c1bdb363;
-    text-align: start;
-    backdrop-filter: blur(10px) ;
-    width: 100%;
-    height: 80%;
-    top: 0;
-    left: 0;
-    display: none;
-}
-
-.img2 button:hover div {
-    display: block;
-}
-
-/*//////////////info img3/////////////////  */
-.block_images .img3 {
-    position: relative;
-}
-
-.block_images .img3 button div{
-    position: absolute;
-    color: #040303;
-    background-color: #c1bdb363;
-    text-align: start;
-    backdrop-filter: blur(10px) ;
-    width: 100%;
-    height: 80%;
-    top: 0;
-    left: 0;
-    display: none;
-}
-
-.img3 button:hover div{
-    display: block;
-}
-
-/*///////////////////////////////  */
-.btn-info:hover {
-    background-color: #a4a199;
-    border-radius: 100%;
-}
-
-.btn-info div ul {
-    list-style: none;
-}
-
-
-/* ///////////////////Desktop///////////////////// */
-@media screen and(min-width: 1024px) {
-  .block_images{
-    
-      text-align: center;
-      padding: 2%;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      flex-wrap: wrap;
-  }
-
-  .img1,.img2,.img3{
-      border-radius: 5%;
-      box-shadow: 0px 0px 10px black;
-      padding: 0;
-      justify-content: center;
-      align-items: center;  
-      text-align: center;
-      flex-wrap:nowrap;
-      margin-top: 10px;
-      margin-bottom: 10px;
+    flex-wrap: nowrap;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 }
 
