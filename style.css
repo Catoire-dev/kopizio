@@ -62,6 +62,8 @@ header .order-b {
 
 /*about section starts*/
 section.about {
+ 
+  height: 90vh;
   box-sizing: border-box;
   background-color: #3c6997;
   padding: 60px;
@@ -69,6 +71,7 @@ section.about {
 
 section.about .text {
   display: flex;
+  justify-content: center ;
   align-items: center;
   gap: 20px;
 }
@@ -85,25 +88,40 @@ section.about img {
 }
 
 section.about .dots {
-  margin-top: 30px;
+  position : absolute;
+  bottom: 50px;
+  left: 0px;
   display: flex;
   width: 100%;
   justify-content: center;
+  align-items: center;
   gap: 10px;
+  color: white;
 }
 
-section.about .dots span {
+
+section.about .dots span.rond{
   width: 20px;
   background-color: white;
   height: 20px;
   border-radius: 50%;
   cursor: pointer;
 }
-
+section.about .dots span.arrow:hover {
+  color: red;
+  cursor: pointer;
+}
+section.about .dots span p {
+  padding: 0;
+  margin: 0;
+  width: 50%;
+  font-size: 50px;
+}
+/*
 section.about .dots span.first {
   background-color: #a42222;
 }
-
+*/
 @media (max-width: 768px) {
   section.about .text {
     flex-direction: column;
