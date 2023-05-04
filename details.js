@@ -13,7 +13,7 @@ const pizzas = [
   {
     name: "Savoyarde",
     description: "Base crème fraîche, Mozzarella, lardons, Reblochon, Oignons",
-    poster: "./img/savoyarde",
+    poster: "./img/savoyarde.avif",
   },
   {
     name: "Reine",
