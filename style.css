@@ -42,6 +42,10 @@ header nav ul {
   align-items: baseline;
 }
 
+/* .mobileNav {
+  display: none;
+} */
+
 @media (max-width: 768px) {
   .desktopNav{
     display: none;
@@ -51,6 +55,7 @@ header nav ul {
     gap: 5px;
   }
 
+  /* MODIFIER ICI POUR LE MENU BURGER */
   .activeMobile{
     display: none;
   }
@@ -81,6 +86,10 @@ header nav ul {
     background-color: inherit;
   }
 }
+
+/* .activeMobile{
+  display: none;
+} */
 
 header nav ul a {
   display: block;
