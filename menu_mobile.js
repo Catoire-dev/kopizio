@@ -53,5 +53,6 @@ function afficherNav() {
   }
 }
 
+
 afficherNav();
 windowSize.addListener(afficherNav);
