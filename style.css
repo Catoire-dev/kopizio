@@ -18,6 +18,11 @@ header {
   background-color: #a42222;
   box-sizing: border-box;
   height: 60px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
 }
 
 header .logo {
@@ -105,6 +110,7 @@ header .order-b {
 
 /*about section starts*/
 section.about {
+  height: 90vh;
   box-sizing: border-box;
   background-color: #3c6997;
   padding: 60px;
@@ -112,6 +118,7 @@ section.about {
 
 section.about .text {
   display: flex;
+  justify-content: center;
   align-items: center;
   gap: 20px;
 }
@@ -128,25 +135,39 @@ section.about img {
 }
 
 section.about .dots {
-  margin-top: 30px;
+  position: absolute;
+  bottom: 50px;
+  left: 0px;
   display: flex;
   width: 100%;
   justify-content: center;
+  align-items: center;
   gap: 10px;
+  color: white;
 }
 
-section.about .dots span {
+section.about .dots span.rond {
   width: 20px;
   background-color: white;
   height: 20px;
   border-radius: 50%;
   cursor: pointer;
 }
-
+section.about .dots span.arrow:hover {
+  color: red;
+  cursor: pointer;
+}
+section.about .dots span p {
+  padding: 0;
+  margin: 0;
+  width: 50%;
+  font-size: 50px;
+}
+/*
 section.about .dots span.first {
   background-color: #a42222;
 }
-
+*/
 @media (max-width: 768px) {
   section.about .text {
     flex-direction: column;
@@ -179,17 +200,16 @@ section.about .dots span.first {
 /* -----------------Main-------------------- */
 
 #menu {
-    display: flex;
-    flex-direction: column;
-    background-color:#C1BDB3 ;
-
+  display: flex;
+  flex-direction: column;
+  background-color: #c1bdb3;
 }
 
 #menu > h2 {
-    background-color: #C1BDB3;
-    margin: 0.7em 0 0 0;
-    text-align: center;
-    font-size: 30px;
+  background-color: #c1bdb3;
+  margin: 0.7em 0 0 0;
+  text-align: center;
+  font-size: 30px;
 }
 .block_images {
   background-color: #c1bdb3;
@@ -207,6 +227,7 @@ section.about .dots span.first {
 .img5,
 .img6 {
   margin: 40px;
+  height: 250px;
   border-radius: 5%;
   box-shadow: 0px 0px 10px black;
   width: 300px;
@@ -215,6 +236,10 @@ section.about .dots span.first {
   align-items: center;
   text-align: center;
   flex-wrap: nowrap;
+}
+.btn_js {
+  padding: 0;
+  border-radius: 5%;
 }
 .txt-btn {
   margin-top: 10px;
@@ -431,7 +456,7 @@ section.about .dots span.first {
 
 form {
   height: 20em;
-  
+
   display: grid;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
   column-gap: 0.5em;
