@@ -44,7 +44,7 @@ function activeNavside() {
 }
 
 // creation fonction d'affichage de la nav mobile en fonction de la taille de l'ecran
-function afficherNav(windowSize) {
+function afficherNav() {
   if (windowSize.matches) {
     // navSide.style.display;
     button.addEventListener("click", activeNavside);
@@ -53,5 +53,5 @@ function afficherNav(windowSize) {
   }
 }
 
-afficherNav(windowSize);
+afficherNav();
 windowSize.addListener(afficherNav);

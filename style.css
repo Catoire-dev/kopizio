@@ -69,12 +69,12 @@ header nav ul {
     background-color: blue;
   }
 
-    .hamburger {
-      background-color: #040303;
-      width: 30px;
-      height: 4px;
-      margin: 3px;
-    }
+  .hamburger {
+    background-color: #040303;
+    width: 30px;
+    height: 4px;
+    margin: 3px;
+  }
 
   .hamburgerButton:hover{
     cursor: pointer;
