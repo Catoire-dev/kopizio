@@ -18,6 +18,11 @@ header {
   background-color: #a42222;
   box-sizing: border-box;
   height: 60px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
 }
 
 header .logo {
@@ -62,7 +67,6 @@ header .order-b {
 
 /*about section starts*/
 section.about {
- 
   height: 90vh;
   box-sizing: border-box;
   background-color: #3c6997;
@@ -71,7 +75,7 @@ section.about {
 
 section.about .text {
   display: flex;
-  justify-content: center ;
+  justify-content: center;
   align-items: center;
   gap: 20px;
 }
@@ -88,7 +92,7 @@ section.about img {
 }
 
 section.about .dots {
-  position : absolute;
+  position: absolute;
   bottom: 50px;
   left: 0px;
   display: flex;
@@ -99,8 +103,7 @@ section.about .dots {
   color: white;
 }
 
-
-section.about .dots span.rond{
+section.about .dots span.rond {
   width: 20px;
   background-color: white;
   height: 20px;
