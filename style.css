@@ -48,8 +48,42 @@ header nav ul {
 }
 
 @media (max-width: 768px) {
+  .desktopNav{
+    display: none;
+  }
+
   header nav ul {
     gap: 5px;
+  }
+
+  .activeMobile{
+    display: none;
+  }
+
+  .couleur{
+    background-color: blue;
+  }
+
+    .hamburger {
+      background-color: #040303;
+      width: 30px;
+      height: 4px;
+      margin: 3px;
+    }
+
+  .hamburgerButton:hover{
+    cursor: pointer;
+  }
+
+  .mobileNav{
+    width: 100%;
+    background-color: rgba(164, 34, 34, 75%);
+    position: relative;
+    right: 0%;
+  }
+
+  .mobileNav .order-b{
+    background-color: inherit;
   }
 }
 
