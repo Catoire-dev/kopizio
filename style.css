@@ -18,6 +18,11 @@ header {
   background-color: #a42222;
   box-sizing: border-box;
   height: 60px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
 }
 
 header .logo {
@@ -43,8 +48,42 @@ header nav ul {
 }
 
 @media (max-width: 768px) {
+  .desktopNav{
+    display: none;
+  }
+
   header nav ul {
     gap: 5px;
+  }
+
+  .activeMobile{
+    display: none;
+  }
+
+  .couleur{
+    background-color: blue;
+  }
+
+    .hamburger {
+      background-color: #040303;
+      width: 30px;
+      height: 4px;
+      margin: 3px;
+    }
+
+  .hamburgerButton:hover{
+    cursor: pointer;
+  }
+
+  .mobileNav{
+    width: 100%;
+    background-color: rgba(164, 34, 34, 75%);
+    position: relative;
+    right: 0%;
+  }
+
+  .mobileNav .order-b{
+    background-color: inherit;
   }
 }
 
@@ -62,7 +101,6 @@ header .order-b {
 
 /*about section starts*/
 section.about {
- 
   height: 90vh;
   box-sizing: border-box;
   background-color: #3c6997;
@@ -71,7 +109,7 @@ section.about {
 
 section.about .text {
   display: flex;
-  justify-content: center ;
+  justify-content: center;
   align-items: center;
   gap: 20px;
 }
@@ -88,7 +126,7 @@ section.about img {
 }
 
 section.about .dots {
-  position : absolute;
+  position: absolute;
   bottom: 50px;
   left: 0px;
   display: flex;
@@ -99,8 +137,7 @@ section.about .dots {
   color: white;
 }
 
-
-section.about .dots span.rond{
+section.about .dots span.rond {
   width: 20px;
   background-color: white;
   height: 20px;
