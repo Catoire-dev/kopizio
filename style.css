@@ -60,7 +60,6 @@ header nav ul {
     gap: 5px;
   }
 
-  /* MODIFIER ICI POUR LE MENU BURGER */
   .activeMobile{
     display: none;
   }
@@ -75,6 +74,7 @@ header nav ul {
     height: 4px;
     margin: 3px;
   }
+
 
   .hamburgerButton:hover{
     cursor: pointer;
