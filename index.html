@@ -17,13 +17,26 @@
     <!--------------------------------------------------------navigation start-------------------------------------------------->
     <!--------------------------------------------------------navigation start-------------------------------------------------->
 
-    <header>
-      <nav>
-        <a href="index.html" class="logo">KOPIZIO</a>
-        <ul>
-          <li><a href="">Menu</a></li>
-          <li><a href="">About</a></li>
-          <li><a href="" class="order-b">Order</a></li>
+    <header class="headerTest">
+
+    <nav>
+         <a href="index.html" class="logo">KOPIZIO</a> 
+       <p id="logo"></p>
+       <script>
+       let text = "";
+       let result = text.link ("index.html")
+       document.getElementById("logo").innerHTML = result;
+</script>
+
+        <div class="hamburgerButton">
+          <div class="hamburger"></div>
+          <div class="hamburger"></div>
+          <div class="hamburger"></div>
+        </div>
+        <ul class="desktopNav">
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#order" class="order-b">Order</a></li>
         </ul>
       </nav>
     </header>
@@ -31,9 +44,8 @@
     <!-----------------------------------------------------------navigation ends------------------------------------------------->
     <!-----------------------------------------------------------navigation ends------------------------------------------------->
 
-    <!-------------------------------------------------------about section starts-------------------------------------------------->
-    <!-------------------------------------------------------about section starts-------------------------------------------------->
-
+    <!-------------------------------------------------------about section starts------------------------------------------------->
+    <!-------------------------------------------------------about section starts------------------------------------------------->
     <section id="about" class="about">
       <h2>About us</h2>
       <div class="text">
@@ -57,126 +69,183 @@
         <img src="img/chef.avif" alt="" />
       </div>
       <div class="dots">
-        <span class="first"> </span>
-        <span class="second"></span>
-        <span class="third"></span>
+        <span id="left" class="arrow"><p>&#8826;</p></span>
+        <span id="first" class="rond"> </span>
+        <span id="second" class="rond"></span>
+        <span id="third" class="rond"></span>
+        <span id="right" class="arrow"><p>&#8827;</p></span>
       </div>
     </section>
 
     <!--------------------------------------------about section ends----------------------------------------------------------------->
     <!--------------------------------------------about section ends----------------------------------------------------------------->
-    
-    
+
     <!--------------------------------------------Main section start----------------------------------------------------------------->
 
     <div id="menu">
-        <h2 >Our Pizza</h2>
-    </div> 
-    <section class="block_images" >
-
-     <div class="img1">
-        <img class="img-card" src="img/4fromages.avif" alt="" />
-        <div class="txt-btn">
-            <p class="txt-card">4 Fromages</p>
-            <button class="main-btn">
-                <div class="btn-info"> 
-                    <ul>
-                        <li>Base sauce tomate</li>
-                        <li>Mozzarella</li>
-                        <li>Chèvre</li>
-                        <li>Reblochon</li>
-                        <li>Fourme d'Ambert</li>
-    
-                    </ul>
-                </div>
-                <img src="img/logo-ingredient.png" alt="">
-            </button>
-        </div>
-     
+      <h2>Our Pizza</h2>
     </div>
-  <div class="img2">
+    <section class="block_images">
+      <div class="img1 card">
+        <button class="btn_js">
+          <img class="img-card" src="img/4fromages.avif" alt="" id="fro" />
+        </button>
+        <div class="txt-btn">
+          <p class="txt-card">4 Fromages</p>
+          <!-- <button class="main-btn">  
+
+            <div class="btn-info">
+              <ul>
+                <li>Base sauce tomate</li>
+                <li>Mozzarella</li>
+                <li>Chèvre</li>
+                <li>Reblochon</li>
+                <li>Fourme d'Ambert</li>
+              </ul>
+            </div>
+            <img src="img/logo-ingredient.png" alt="" />
+
+          </button>
+        </div>
+      </div>
+      <div class="img2">
         <img class="img-card" src="img/margherita.avif" alt="" />
         <div class="txt-btn">
-            <p class="txt-card">Margherita</p>
-            <button class="main-btn">
-                <div class="btn-info"> 
-                    <ul>
-                        <li>Base sauce tomate</li>
-                        <li>Mozzarella</li>
-                    </ul>
-                </div>
-                <img src="img/logo-ingredient.png" alt="">
-            </button>
-        </div>
-       
-      </div>
-      <div class="img3">
-        <img class="img-card" src="img/savoyarde.avif" alt="" />
-        <div class="txt-btn">
-            <p class="txt-card">Savoyarde</p>
-            <button class="main-btn">
-                <div class="btn-info"> 
-                    <ul>
-                        <li>Base crème fraîche</li>
-                        <li>Mozzarella</li>
-                        <li>lardons</li>
-                        <li>Reblochon</li>
-                        <li>Oignons</li>
-    
-                    </ul>
-                </div>
-                <img src="img/logo-ingredient.png" alt="">
-            </button> 
+          <p class="txt-card">Margherita</p>
+          <button class="main-btn">
+
+          </button>-->
+          <!-- <button>Click me</button> -->
         </div>
       </div>
-      <div class="img4">
-        <img class="img-card" src="img/reine.avif" alt="" />
+      <div class="img2 card">
+        <button class="btn_js">
+          <img class="img-card margh" src="img/margherita.avif" alt="" />
+        </button>
         <div class="txt-btn">
-            <p class="txt-card">Reine</p>
-            <button class="main-btn">
-                <div class="btn-info"> 
-                    <ul>
-                        <li>Base sauce tomate</li>
-                        <li>Mozzarella</li>
-                        <li>Jambon</li>
-                        <li>Champignons</li>
-                    </ul>
-                </div>
-                <img src="img/logo-ingredient.png" alt="">
-            </button> 
+          <p class="txt-card">Margherita</p>
+          <!-- <button class="main-btn"> 
+
+            <div class="btn-info">
+              <ul>
+                <li>Base sauce tomate</li>
+                <li>Mozzarella</li>
+              </ul>
+            </div>
+            <img src="img/logo-ingredient.png" alt="" />
+
+          </button>
+
+          </button>-->
+
         </div>
       </div>
-      <div class="img5">
-        <img class="img-card" src="img/chevremiel.avif" alt="" />
+      <div class="img3 card">
+        <button class="btn_js">
+          <img class="img-card" src="img/savoyarde.avif" alt="" />
+        </button>
         <div class="txt-btn">
-            <p class="txt-card">Chèvre miel</p>
-            <button class="main-btn">
-                <div class="btn-info"> 
-                    <ul>
-                        <li>Base crème fraîche</li>
-                        <li>Mozzarella</li>
-                        <li>Chèvre</li>
-                        <li>Miel</li>
-                    </ul>
-                </div>
-                <img src="img/logo-ingredient.png" alt="">
-            </button> 
+          <p class="txt-card">Savoyarde</p>
+
+          <button class="main-btn">
+
+          <!-- <button class="main-btn"> 
+
+            <div class="btn-info">
+              <ul>
+                <li>Base crème fraîche</li>
+                <li>Mozzarella</li>
+                <li>lardons</li>
+                <li>Reblochon</li>
+                <li>Oignons</li>
+              </ul>
+            </div>
+            <img src="img/logo-ingredient.png" alt="" />
+
+          </button>
+
+          </button>-->
+
         </div>
       </div>
-      <div class="img6">
-        <img class="img-card" src="img/pepperoni.avif" alt="" />
+      <div class="img4 card">
+        <button class="btn_js">
+          <img class="img-card" src="img/reine.avif" alt="" />
+        </button>
         <div class="txt-btn">
-            <p class="txt-card">Pepperoni</p>
-            <button class="main-btn">
-                <div class="btn-info"> 
-                    <ul>
-                        <li>Base sauce tomate</li>
-                        <li>Mozzarella</li>
-                        <li>Pepperoni</li>
-                    </ul>
-                </div>
-                <img src="img/logo-ingredient.png" alt="">
-            </button> 
+          <p class="txt-card">Reine</p>
+
+          <button class="main-btn">
+
+          <!-- <button class="main-btn"> 
+
+            <div class="btn-info">
+              <ul>
+                <li>Base sauce tomate</li>
+                <li>Mozzarella</li>
+                <li>Jambon</li>
+                <li>Champignons</li>
+              </ul>
+            </div>
+            <img src="img/logo-ingredient.png" alt="" />
+
+          </button>
+
+          </button>-->
+
+        </div>
+      </div>
+      <div class="img5 card">
+        <button class="btn_js">
+          <img class="img-card" src="img/chevremiel.avif" alt="" />
+        </button>
+        <div class="txt-btn">
+          <p class="txt-card">Chèvre miel</p>
+
+          <button class="main-btn">
+
+          <!-- <button class="main-btn"> 
+
+            <div class="btn-info">
+              <ul>
+                <li>Base crème fraîche</li>
+                <li>Mozzarella</li>
+                <li>Chèvre</li>
+                <li>Miel</li>
+              </ul>
+            </div>
+            <img src="img/logo-ingredient.png" alt="" />
+
+          </button>
+
+          </button>-->
+
+        </div>
+      </div>
+      <div class="img6 card">
+        <button class="btn_js">
+          <img class="img-card" src="img/pepperoni.avif" alt="" />
+        </button>
+        <div class="txt-btn">
+          <p class="txt-card">Pepperoni</p>
+
+          <button class="main-btn">
+
+          <!-- <button class="main-btn"> 
+
+            <div class="btn-info">
+              <ul>
+                <li>Base sauce tomate</li>
+                <li>Mozzarella</li>
+                <li>Pepperoni</li>
+              </ul>
+            </div>
+            <img src="img/logo-ingredient.png" alt="" />
+
+          </button>
+
+          </button>-->
+
         </div>
       </div>
       <!-- 
@@ -192,7 +261,6 @@
             </div> -->
     </section>
     <!--------------------------------------------Main section ends----------------------------------------------------------------->
-
 
     <!-- --------------------------------------------------------------------------------------------------- -->
     <!---------------------------------------------- footer------------------------------------------------- -->
@@ -230,5 +298,11 @@
       <p>|</p>
       <a href="#contact">Order</a>
     </footer>
+
+    <script src="menu_mobile.js"></script>
+
+
+    <script src="script.js"></script>
+    <script src="cards.js"></script>
   </body>
 </html>
