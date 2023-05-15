@@ -2,13 +2,13 @@ const button = document.querySelector(".hamburgerButton");
 const header = document.querySelector(".headerTest");
 
 // creation des elements du nav menu mobile
-const navSide = document.createElement("nav");
-const ulSide = document.createElement("ul");
-const liMenu = document.createElement("li");
-const liAbout = document.createElement("li");
-const liOrder = document.createElement("li");
-const aMenu = document.createElement("a");
-const aAbout = document.createElement("a");
+const navSide = document.createElement('nav');
+const ulSide = document.createElement('ul');
+const liMenu = document.createElement('li');
+const liAbout = document.createElement('li');
+const liOrder = document.createElement('li');
+const aMenu = document.createElement('a');
+const aAbout = document.createElement('a');
 const aOrder = document.createElement("a");
 
 // création du nav menu version mobile
@@ -35,24 +35,9 @@ aAbout.href = "#about";
 aOrder.textContent = "Order";
 aOrder.href = "#order";
 
-// definition de la taille de l'ecran
-const windowSize = window.matchMedia("(max-width: 768px)");
-
-// creation fonction toggle sur le bouton burger
+// creation de la fonction pour afficher nav menu mobile
 function activeNavside() {
   navSide.classList.toggle("activeMobile");
 }
 
-// creation fonction d'affichage de la nav mobile en fonction de la taille de l'ecran
-function afficherNav() {
-  if (windowSize.matches) {
-    // navSide.style.display;
-    button.addEventListener("click", activeNavside);
-  } else {
-    navSide.style.display = "none";
-  }
-}
-
-
-afficherNav();
-windowSize.addListener(afficherNav);
+button.addEventListener("click", activeNavside);
