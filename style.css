@@ -47,6 +47,10 @@ header nav ul {
   align-items: baseline;
 }
 
+/* .mobileNav {
+  display: none;
+} */
+
 @media (max-width: 768px) {
   .desktopNav{
     display: none;
@@ -64,12 +68,13 @@ header nav ul {
     background-color: blue;
   }
 
-    .hamburger {
-      background-color: #040303;
-      width: 30px;
-      height: 4px;
-      margin: 3px;
-    }
+  .hamburger{
+    background-color: #040303;
+    width: 30px;
+    height: 4px;
+    margin: 3px;
+  }
+
 
   .hamburgerButton:hover{
     cursor: pointer;
@@ -86,6 +91,10 @@ header nav ul {
     background-color: inherit;
   }
 }
+
+/* .activeMobile{
+  display: none;
+} */
 
 header nav ul a {
   display: block;
